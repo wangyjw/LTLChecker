@@ -1,0 +1,20 @@
+ltl p1	 { []<>!p_a37_SIGALRM }
+ltl p2	 { <>(p_a5_SIGQUIT || (p_a13_SIGUSR1 V (!p_a9_SIGLOST || p_a13_SIGUSR1))) }
+ltl p3	 { [](!p_a9_SIGLOST || <>p_a34_SIGTERM) }
+ltl p4	 { [](!p_a13_SIGUSR1 || (!p_a9_SIGLOST U p_a39_SIGEMT) || !<>p_a10_SIGHUP) }
+ltl p5	 { [](!p_a37_SIGALRM || X!p_a37_SIGALRM) }
+ltl p6	 { !p_a32_SIGHUP U p_a32_SIGHUP }
+ltl p7	 { [](p_a34_SIGTERM V (!p_a9_SIGLOST || p_a34_SIGTERM)) }
+ltl p8	 { [](!p_a4_SIGTSTP || !p_a34_SIGTERM || (p_a39_SIGEMT V (!p_a6_SIGXFSZ || p_a39_SIGEMT))) }
+ltl p9	 { []<>p_a4_SIGTSTP }
+ltl p10	 { <>p_a37_SIGALRM }
+ltl p11	 { !(p_a10_SIGHUP || p_a19_SIGLOST) U p_a4_SIGTSTP }
+ltl p12	 { p_a32_SIGHUP V (p_a32_SIGHUP || !p_a32_SIGHUP) }
+ltl p13	 { [](p_a19_SIGLOST V (!p_a10_SIGHUP || p_a19_SIGLOST || <>p_a6_SIGXFSZ)) }
+ltl p14	 { [](!p_a10_SIGHUP || X(!p_a10_SIGHUP U p_a6_SIGXFSZ)) }
+ltl p15	 { !(p_a6_SIGXFSZ || p_a39_SIGEMT) || (!p_a36_SIGSEGV U p_a30_SIGPOLL) }
+ltl p16	 { []!p_a38_SIGILL }
+ltl p17	 { [](!p_a39_SIGEMT || <>(!p_a39_SIGEMT U p_a13_SIGUSR1)) }
+ltl p18	 { <>p_a13_SIGUSR1 }
+ltl p19	 { [](!p_a6_SIGXFSZ || (!p_a32_SIGHUP U p_a21_SIGPIPE)) }
+ltl p20	 { [](!p_a20_SIGCHLD || X(!p_a20_SIGCHLD U p_a39_SIGEMT)) }

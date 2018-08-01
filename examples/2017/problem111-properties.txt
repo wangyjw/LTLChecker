@@ -1,0 +1,60 @@
+#1:
+( (!a23_SIGWINCH U a30_SIGPROF) )
+
+#2:
+( G(F(!a26_SIGWINCH)) )
+
+#3:
+( F(a19_SIGTTOU | (!a3_SIGBUS W a16_SIGTTIN)) )
+
+#4:
+( G(a3_SIGBUS => F(a35_SIGTERM)) )
+
+#5:
+( G(F(a32_SIGALRM) => (a16_SIGTTIN => (!a3_SIGBUS U a1_SIGABRT))) )
+
+#6:
+( G(a26_SIGWINCH => X(!a26_SIGWINCH)) )
+
+#7:
+( (!a32_SIGALRM U (a11_SIGURG | a19_SIGTTOU)) )
+
+#8:
+( (!a33_SIGPROF U a33_SIGPROF) )
+
+#9:
+( F(a26_SIGWINCH) )
+
+#10:
+( G(!a35_SIGTERM | (a36_SIGUSR2 => (!a24_SIGPWR W a1_SIGABRT))) )
+
+#11:
+( G(F(a36_SIGUSR2)) )
+
+#12:
+( F(a16_SIGTTIN) )
+
+#13:
+( (!a33_SIGPROF W a33_SIGPROF) )
+
+#14:
+( G((a32_SIGALRM => F(a24_SIGPWR)) W a8_SIGPOLL) )
+
+#15:
+( G(a32_SIGALRM => X(!a32_SIGALRM U a24_SIGPWR)) )
+
+#16:
+( G(!a6_SIGSYS) )
+
+#17:
+( G(a30_SIGPROF => X(!a2_SIGSEGV U a30_SIGPROF)) )
+
+#18:
+( F(a38_SIGTSTP & (!a1_SIGABRT W a17_SIGINFO)) )
+
+#19:
+( G(a24_SIGPWR => (!a33_SIGPROF U a17_SIGINFO)) )
+
+#20:
+( F(a3_SIGBUS & G(!a11_SIGURG)) )
+

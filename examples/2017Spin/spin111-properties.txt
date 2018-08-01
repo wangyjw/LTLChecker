@@ -1,0 +1,20 @@
+ltl p1	 { !p_a23_SIGWINCH U p_a30_SIGPROF }
+ltl p2	 { []<>!p_a26_SIGWINCH }
+ltl p3	 { <>(p_a19_SIGTTOU || (p_a16_SIGTTIN V (!p_a3_SIGBUS || p_a16_SIGTTIN))) }
+ltl p4	 { [](!p_a3_SIGBUS || <>p_a35_SIGTERM) }
+ltl p5	 { [](!p_a16_SIGTTIN || (!p_a3_SIGBUS U p_a1_SIGABRT) || !<>p_a32_SIGALRM) }
+ltl p6	 { [](!p_a26_SIGWINCH || X!p_a26_SIGWINCH) }
+ltl p7	 { !p_a32_SIGALRM U (p_a11_SIGURG || p_a19_SIGTTOU) }
+ltl p8	 { !p_a33_SIGPROF U p_a33_SIGPROF }
+ltl p9	 { <>p_a26_SIGWINCH }
+ltl p10	 { [](!p_a35_SIGTERM || !p_a36_SIGUSR2 || (p_a1_SIGABRT V (p_a1_SIGABRT || !p_a24_SIGPWR))) }
+ltl p11	 { []<>p_a36_SIGUSR2 }
+ltl p12	 { <>p_a16_SIGTTIN }
+ltl p13	 { p_a33_SIGPROF V (p_a33_SIGPROF || !p_a33_SIGPROF) }
+ltl p14	 { [](p_a8_SIGPOLL V (p_a8_SIGPOLL || !p_a32_SIGALRM || <>p_a24_SIGPWR)) }
+ltl p15	 { [](!p_a32_SIGALRM || X(!p_a32_SIGALRM U p_a24_SIGPWR)) }
+ltl p16	 { []!p_a6_SIGSYS }
+ltl p17	 { [](!p_a30_SIGPROF || X(!p_a2_SIGSEGV U p_a30_SIGPROF)) }
+ltl p18	 { <>(p_a38_SIGTSTP && (p_a17_SIGINFO V (!p_a1_SIGABRT || p_a17_SIGINFO))) }
+ltl p19	 { [](!p_a24_SIGPWR || (!p_a33_SIGPROF U p_a17_SIGINFO)) }
+ltl p20	 { <>(p_a3_SIGBUS && []!p_a11_SIGURG) }

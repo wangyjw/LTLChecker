@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="/usr/local/lib/antlr-4.5.3-complete.jar" sourcepath="/Users/yanyihao/Documents/antlr4-master.zip"/>
+	<classpathentry kind="lib" path="/opt/vsl1/lib/ltl2buchi.jar" sourcepath="/Users/yanyihao/Documents/LTL2Buchi"/>
+	<classpathentry kind="lib" path="/Users/yanyihao/Documents/myLib/gmc.jar" sourcepath="/GMC"/>
+	<classpathentry kind="lib" path="/Users/yanyihao/Documents/myLib/LTLParser.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

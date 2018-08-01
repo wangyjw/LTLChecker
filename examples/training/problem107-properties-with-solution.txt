@@ -1,0 +1,60 @@
+#1: 	 true
+( ((c4_t0 => (!c2_t2__c3_t5 W c2_t9)) W (c4_t18 | c2_t4)) )
+
+#2: 	 false
+( ((c1_t8 => (!c6_t4 W c6_t10)) W c1_t4) )
+
+#3: 	 true
+( ((c4_t11 => G(!c3_t7)) W c4_t8) )
+
+#4: 	 true
+( ((c3_t0__c4_t2 => (!c3_t8 U c4_t17)) W (c4_t19 | c4_t12__c6_t7)) )
+
+#5: 	 false
+( G((c4_t3 => (!c2_t14 W c4_t15)) & !(c4_t12__c6_t7 | c6_t1__c4_t4)) )
+
+#6: 	 true
+( (!(c4_t7 | c4_t8) W (c4_t3 | c0_t5)) )
+
+#7: 	 false
+( ((c1_t8 => G(!c6_t4)) W c5_t3__c1_t3) )
+
+#8: 	 true
+( ((c4_t12__c6_t7 => F(c3_t2)) W c4_t8) )
+
+#9: 	 true
+( (!c4_t0 W (c3_t6__c2_t11 | c4_t18)) )
+
+#10: 	 false
+( ((c4_t1 => (!c4_t17 U c4_t9)) W c6_t6) )
+
+#11: 	 false
+( ((c0_t4 => (!c2_t13 W c2_t3)) W (c0_t6 | c2_t8)) )
+
+#12: 	 false
+( ((c4_t10 => G(!c1_t4)) W (c4_t1 | c1_t1)) )
+
+#13: 	 false
+( ((c2_t2__c3_t5 => G(!c4_t3)) W (c4_t17 | c3_t6__c2_t11)) )
+
+#14: 	 true
+( ((c4_t0 => F(c4_t6)) W (c1_t0 | c4_t14)) )
+
+#15: 	 true
+( (!(c4_t1 | c4_t0) W (c3_t12 | c4_t19)) )
+
+#16: 	 false
+( ((c1_t8 => G(!c6_t6)) W c5_t3__c1_t3) )
+
+#17: 	 false
+( ((c0_t9 => (!c2_t14 W c2_t0)) W c2_t9) )
+
+#18: 	 false
+( G((c4_t16__c6_t5 => (!c6_t9 W c6_t6)) & (c6_t0 => G(!c1_t9))) )
+
+#19: 	 false
+( G(c6_t0 => (!c4_t1 W c4_t19)) )
+
+#20: 	 false
+( ((c4_t9 => G(!c0_t5)) W c4_t17) )
+

@@ -1,0 +1,20 @@
+ltl p1  { (p_c2_t5 || p_c5_t6) V (p_c2_t5 || p_c5_t6 || !(p_c5_t7 || p_c8_t0__c2_t9)) }
+ltl p2  { p_c10_t2 V (!p_c4_t2 || p_c10_t2 || (p_c3_t0__c0_t3 V (!p_c0_t1 || p_c3_t0__c0_t3))) }
+ltl p3  { [](!p_c11_t12 || (p_c0_t11 V (p_c0_t11 || !p_c0_t13))) }
+ltl p4  { [](!p_c1_t2 || (p_c9_t5 V (p_c9_t5 || !p_c10_t7))) }
+ltl p5  { p_c5_t7 V (p_c5_t7 || !p_c8_t0__c2_t9) }
+ltl p6  { []!p_c10_t8 }
+ltl p7  { (p_c0_t12__c4_t0 || p_c4_t4) V (p_c0_t12__c4_t0 || p_c4_t4 || !(p_c10_t8 || p_c10_t9)) }
+ltl p8  { (p_c3_t6 || p_c5_t17) V (p_c3_t6 || !p_c5_t11 || p_c5_t17 || <>p_c6_t4) }
+ltl p9  { p_c10_t8 V (p_c10_t8 || !p_c10_t9 || (!p_c7_t7 U p_c8_t2)) }
+ltl p10 { (p_c1_t9 || p_c3_t5) V (p_c1_t9 || p_c3_t5 || !p_c10_t8 || (!p_c1_t2 U p_c8_t7__c1_t7)) }
+ltl p11 { [](!p_c8_t10 && (!p_c1_t0__c3_t13 || (p_c8_t8 V (!p_c5_t12 || p_c8_t8)))) }
+ltl p12 { p_c1_t0__c3_t13 V (p_c1_t0__c3_t13 || !p_c10_t1 || []!p_c10_t8) }
+ltl p13 { p_c9_t12 V (p_c9_t12 || !p_c10_t12__c1_t5 || <>p_c10_t10__c4_t1) }
+ltl p14 { (p_c5_t11 || p_c8_t0__c2_t9) V (!p_c0_t14__c5_t13 || p_c5_t11 || p_c8_t0__c2_t9 || (p_c7_t1__c4_t3 V (!p_c5_t15 || p_c7_t1__c4_t3))) }
+ltl p15 { (p_c7_t7 || p_c10_t0) V (p_c7_t7 || p_c10_t0 || !p_c10_t9 || (p_c10_t2 V (!p_c7_t9 || p_c10_t2))) }
+ltl p16 { p_c1_t2 V (p_c1_t2 || !p_c1_t3 || (p_c3_t11 V (p_c3_t11 || !p_c8_t0__c2_t9))) }
+ltl p17 { (p_c4_t4 || p_c9_t12) V (!p_c1_t2 || p_c4_t4 || p_c9_t12 || (p_c10_t12__c1_t5 V (!p_c4_t6 || p_c10_t12__c1_t5))) }
+ltl p18 { p_c0_t7 V (p_c0_t7 || !p_c0_t8__c2_t6 || (p_c9_t11 V (!p_c8_t0__c2_t9 || p_c9_t11))) }
+ltl p19 { [](!p_c0_t4 || []!p_c0_t12__c4_t0) }
+ltl p20 { p_c3_t11 V (p_c3_t11 || !p_c7_t7 || (p_c3_t0__c0_t3 V (!p_c1_t9 || p_c3_t0__c0_t3))) }

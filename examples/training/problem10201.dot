@@ -1,0 +1,22 @@
+digraph G {
+  subgraph component0 {
+0 [label="0" fillcolor="#6699FF" style=filled];
+2 [label="2" fillcolor="#6699FF" style=filled];
+3 [label="3" fillcolor="#6699FF" style=filled];
+1 [label="1" fillcolor="#6699FF" style=filled];
+2->3 [label="  a2" color=black ];
+3->1 [label="  a3_b2" color=black ];
+1->2 [label="  a1" color=black ];
+0->1 [label="  a0" color=black ];
+  }
+  subgraph component1 {
+4 [label="4" fillcolor="#7F66FF" style=filled];
+5 [label="5" fillcolor="#7F66FF" style=filled];
+6 [label="6" fillcolor="#7F66FF" style=filled];
+7 [label="7" fillcolor="#7F66FF" style=filled];
+5->6 [label="  b1" color=black ];
+7->5 [label="  b3" color=black ];
+4->5 [label="  b0" color=black ];
+6->7 [label="  a3_b2 " color=black ];
+  }
+}

@@ -1,0 +1,20 @@
+ltl p1  { <>(p_c8_t11 V (p_c8_t11 || !p_c17_t9__c8_t8)) }        /* true */
+ltl p2  { (p_c4_t17 || p_c9_t3) V (!p_c4_t13__c14_t12 || p_c4_t17 || p_c9_t3 || (p_c4_t2 V (p_c4_t2 || !p_c4_t8))) }     /* true */
+ltl p3  { p_c8_t7__c3_t11 V (p_c8_t7__c3_t11 || !(p_c8_t10 || p_c11_t13__c8_t5)) }       /* false */
+ltl p4  { (p_c0_t9__c17_t8 || p_c3_t5) V (p_c0_t9__c17_t8 || p_c3_t5 || !p_c3_t12 || []!p_c0_t6) }       /* true */
+ltl p5  { (p_c6_t12 || p_c9_t8) V (p_c6_t12 || p_c9_t8 || !(p_c6_t1 || p_c9_t4__c3_t4)) }        /* true */
+ltl p6  { p_c9_t3 V (!p_c4_t9 || p_c9_t3 || (p_c4_t5 V (p_c4_t5 || !p_c4_t17))) }        /* true */
+ltl p7  { p_c9_t8 V (p_c9_t8 || !(p_c9_t5__c13_t1 || p_c15_t15__c12_t1)) }       /* true */
+ltl p8  { p_c17_t7 V (!p_c10_t5 || p_c17_t7 || (p_c17_t5__c7_t12 V (!p_c10_t4__c0_t7 || p_c17_t5__c7_t12))) }    /* true */
+ltl p9  { []!(p_c9_t5__c13_t1 || p_c18_t7__c15_t9) }     /* false */
+ltl p10 { [](!p_c9_t3 || []!p_c10_t3) }  /* false */
+ltl p11 { (p_c18_t2 || p_c18_t4__c9_t9) V (!p_c3_t1 || p_c18_t2 || p_c18_t4__c9_t9) }    /* false */
+ltl p12 { (p_c8_t7__c3_t11 || p_c9_t6__c18_t8) V (p_c8_t7__c3_t11 || !p_c8_t9__c18_t5 || p_c9_t6__c18_t8 || (!p_c9_t10__c0_t3 U p_c17_t9__c8_t8)) }      /* true */
+ltl p13 { <>(p_c10_t0 V (p_c10_t0 || !p_c11_t13__c8_t5)) }       /* true */
+ltl p14 { (p_c9_t5__c13_t1 || p_c9_t7) V (p_c9_t5__c13_t1 || p_c9_t7 || !p_c18_t4__c9_t9 || <>p_c7_t11) }        /* true */
+ltl p15 { [](!p_c3_t0 && !p_c3_t1) }     /* false */
+ltl p16 { (p_c9_t6__c18_t8 || p_c16_t9__c5_t3) V (p_c9_t6__c18_t8 || !p_c9_t10__c0_t3 || p_c16_t9__c5_t3) }      /* true */
+ltl p17 { (p_c9_t6__c18_t8 || p_c12_t3) V (p_c9_t6__c18_t8 || p_c12_t3 || !p_c15_t15__c12_t1) }  /* true */
+ltl p18 { <>(p_c10_t7 V (!p_c4_t13__c14_t12 || p_c10_t7)) }      /* true */
+ltl p19 { (p_c4_t19 || p_c9_t3) V (!p_c3_t3__c4_t12 || p_c4_t19 || p_c9_t3 || (p_c18_t4__c9_t9 V (!p_c4_t15__c0_t5 || p_c18_t4__c9_t9))) }       /* true */
+ltl p20 { [](!p_c10_t3 || (p_c10_t5 V (p_c10_t5 || !p_c16_t4))) }        /* false */

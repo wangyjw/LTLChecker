@@ -1,0 +1,60 @@
+#1:
+( G(F(!a37_SIGALRM)) )
+
+#2:
+( F(a5_SIGQUIT | (!a9_SIGLOST W a13_SIGUSR1)) )
+
+#3:
+( G(a9_SIGLOST => F(a34_SIGTERM)) )
+
+#4:
+( G(F(a10_SIGHUP) => (a13_SIGUSR1 => (!a9_SIGLOST U a39_SIGEMT))) )
+
+#5:
+( G(a37_SIGALRM => X(!a37_SIGALRM)) )
+
+#6:
+( (!a32_SIGHUP U a32_SIGHUP) )
+
+#7:
+( G(!a9_SIGLOST W a34_SIGTERM) )
+
+#8:
+( G(!a34_SIGTERM | (a4_SIGTSTP => (!a6_SIGXFSZ W a39_SIGEMT))) )
+
+#9:
+( G(F(a4_SIGTSTP)) )
+
+#10:
+( F(a37_SIGALRM) )
+
+#11:
+( (!(a19_SIGLOST | a10_SIGHUP) U a4_SIGTSTP) )
+
+#12:
+( (!a32_SIGHUP W a32_SIGHUP) )
+
+#13:
+( G((a10_SIGHUP => F(a6_SIGXFSZ)) W a19_SIGLOST) )
+
+#14:
+( G(a10_SIGHUP => X(!a10_SIGHUP U a6_SIGXFSZ)) )
+
+#15:
+( ((a39_SIGEMT | a6_SIGXFSZ) => (!a36_SIGSEGV U a30_SIGPOLL)) )
+
+#16:
+( G(!a38_SIGILL) )
+
+#17:
+( G(a39_SIGEMT => F(!a39_SIGEMT U a13_SIGUSR1)) )
+
+#18:
+( F(a13_SIGUSR1) )
+
+#19:
+( G(a6_SIGXFSZ => (!a32_SIGHUP U a21_SIGPIPE)) )
+
+#20:
+( G(a20_SIGCHLD => X(!a20_SIGCHLD U a39_SIGEMT)) )
+

@@ -1,0 +1,28 @@
+digraph G {
+
+  subgraph component1 {
+10 [label="10" fillcolor="#7F66FF" style=filled];
+11 [label="11" fillcolor="#7F66FF" style=filled];
+14 [label="14" fillcolor="#7F66FF" style=filled];
+10->11 [label="" color=black ];
+11->14 [label="c2_t8__c1_t2" color=black ];
+  }
+  subgraph component2 {
+19 [label="19" fillcolor="#CC66FF" style=filled];
+25 [label="25" fillcolor="#CC66FF" style=filled];
+26 [label="26" fillcolor="#CC66FF" style=filled];
+19->26 [label="" color=black ];
+26->25 [label="c2_t8__c1_t2" color=black ];
+  }
+
+  subgraph component4 {
+43 [label="43" fillcolor="#66E6FF" style=filled];
+50 [label="50" fillcolor="#66E6FF" style=filled];
+53 [label="53" fillcolor="#66E6FF" style=filled];
+54 [label="54" fillcolor="#66E6FF" style=filled];
+54->53 [label="c4_t9" color=black ];
+53->50 [label="c4_t10" color=black ];
+50->54 [label="c4_t11" color=black ];
+43->54 [label="" color=black ];
+  }
+}

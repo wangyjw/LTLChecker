@@ -1,0 +1,20 @@
+ltl p1	 { p_a7_SIGIOT V (p_a7_SIGIOT || !p_a7_SIGIOT) }
+ltl p2	 { <>(p_a119_SIGSTOP || (p_a104_SIGPIPE V (p_a104_SIGPIPE || !p_a108_SIGINT))) }
+ltl p3	 { [](<>[]p_a104_SIGPIPE || !(p_a59_SIGUSR1 && X(!p_a112_SIGHUP U p_a59_SIGUSR1))) }
+ltl p4	 { [](!p_a108_SIGINT || <>p_a44_SIGDEADLK) }
+ltl p5	 { [](!p_a89_SIGUSR2 || X!p_a89_SIGUSR2) }
+ltl p6	 { [](!p_a82_SIGBUS || X!p_a82_SIGBUS) }
+ltl p7	 { <>(p_a82_SIGBUS && X(!p_a112_SIGHUP U p_a82_SIGBUS)) }
+ltl p8	 { [](<>(p_a39_SIGPROF && (p_a73_SIGURG V (!p_a5_SIGHUP || p_a73_SIGURG))) || !(p_a37_SIGFPE && (p_a59_SIGUSR1 V (p_a59_SIGUSR1 || !p_a112_SIGHUP)))) }
+ltl p9	 { [](!p_a44_SIGDEADLK || !p_a62_SIGTRAP || (p_a94_SIGALRM V (!p_a5_SIGHUP || p_a94_SIGALRM))) }
+ltl p10	 { []<>p_a62_SIGTRAP }
+ltl p11	 { []<>(p_a37_SIGFPE && X(!p_a112_SIGHUP U p_a37_SIGFPE)) }
+ltl p12	 { []<>!p_a71_SIGVTALRM }
+ltl p13	 { []<>!p_a89_SIGUSR2 }
+ltl p14	 { [](!p_a82_SIGBUS || X(!p_a82_SIGBUS U p_a59_SIGUSR1)) }
+ltl p15	 { <>p_a71_SIGVTALRM }
+ltl p16	 { []!p_a9_SIGQUIT }
+ltl p17	 { [](!p_a83_SIGUSR2 || X(!p_a58_SIGTERM U p_a83_SIGUSR2)) }
+ltl p18	 { <>(p_a37_SIGFPE && (p_a59_SIGUSR1 V (p_a59_SIGUSR1 || !p_a112_SIGHUP))) }
+ltl p19	 { []<>(p_a82_SIGBUS && X(!p_a112_SIGHUP U p_a82_SIGBUS)) }
+ltl p20	 { [](!p_a71_SIGVTALRM || X!p_a71_SIGVTALRM) }

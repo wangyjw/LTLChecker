@@ -1,0 +1,60 @@
+#1:
+( F(a22_SIGINFO | (!a3_SIGBUS W a58_SIGFPE)) )
+
+#2:
+( G((a12_SIGPIPE & X(!a63_SIGSYS U a12_SIGPIPE)) => F(G(a58_SIGFPE))) )
+
+#3:
+( G(F(a30_SIGFPE) => (a58_SIGFPE => (!a3_SIGBUS U a27_SIGQUIT))) )
+
+#4:
+( F(a13_SIGTTOU & X(!a63_SIGSYS U a13_SIGTTOU)) )
+
+#5:
+( G(a38_SIGCHLD => !X(a38_SIGCHLD)) )
+
+#6:
+( F(a38_SIGCHLD & X(!a63_SIGSYS U a38_SIGCHLD)) )
+
+#7:
+( G((a13_SIGTTOU & (!a63_SIGSYS W a12_SIGPIPE)) => F(a55_SIGPROF & (!a25_SIGSEGV W a44_SIGINFO))) )
+
+#8:
+( G(F(a13_SIGTTOU & X(!a63_SIGSYS U a13_SIGTTOU))) )
+
+#9:
+( (!a48_SIGPROF U a48_SIGPROF) )
+
+#10:
+( G(F(!a66_SIGTRAP)) )
+
+#11:
+( G(a38_SIGCHLD => X(!a38_SIGCHLD U a12_SIGPIPE)) )
+
+#12:
+( G(a62_SIGHUP => X(!a62_SIGHUP U a27_SIGQUIT)) )
+
+#13:
+( ((a27_SIGQUIT | a25_SIGSEGV) => (!a33_SIGTTOU U a75_SIGFPE)) )
+
+#14:
+( F(a13_SIGTTOU & (!a63_SIGSYS W a12_SIGPIPE)) )
+
+#15:
+( G(F(a13_SIGTTOU & (!a63_SIGSYS W a12_SIGPIPE))) )
+
+#16:
+( G(F(a38_SIGCHLD & X(!a63_SIGSYS U a38_SIGCHLD))) )
+
+#17:
+( F(a66_SIGTRAP) )
+
+#18:
+( G(a66_SIGTRAP => X(!a66_SIGTRAP)) )
+
+#19:
+( G(a25_SIGSEGV => (!a48_SIGPROF U a55_SIGPROF)) )
+
+#20:
+( G(!a73_SIGKILL) )
+
